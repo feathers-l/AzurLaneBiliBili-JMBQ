@@ -43,6 +43,8 @@ if [ ! -d "azurlane" ]; then
     git clone https://github.com/feathers-l/azurlane
 fi
 
+ls -l
+du -h ./*
 echo "Decompile Azur Lane apk"
 java -jar apktool.jar -q -f d com.bilibili.AzurLane.apk
 
